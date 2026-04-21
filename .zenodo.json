@@ -1,0 +1,22 @@
+{
+  "title": "XENONnT S2-only data release",
+  "upload_type": "software",
+  "description": "Code and processed inputs needed to recast new dark matter searches using the XENONnT S2-only data.",
+  "creators": [
+    {
+      "name": "Shi, Shenyang",
+      "affiliation": "XENON Collaboration"
+    },
+    {
+      "name": "Pan, Yongyu",
+      "affiliation": "XENON Collaboration"
+    }
+  ],
+  "license": "mit",
+  "keywords": [
+    "XENONnT",
+    "dark matter",
+    "recasting"
+  ],
+  "access_right": "open"
+}
