@@ -1,0 +1,456 @@
+parameter_definition:
+  livetime_sr0:
+    nominal_value: 1.50
+    ptype: shape
+    fittable: false
+    description: SR0 livetime
+
+  livetime_sr1:
+    nominal_value: 2.44
+    ptype: shape
+    fittable: false
+    description: SR1 livetime
+
+  livetime_sr2:
+    nominal_value: 3.89
+    ptype: shape
+    fittable: false
+    description: SR2 livetime
+
+  wimp_mass:
+    nominal_value: 6
+    ptype: shape
+    fittable: false
+    description: WIMP mass in GeV/c^2
+    blueice_anchors:
+      - 6
+
+  wimp_rate_multiplier:
+    nominal_value: 1.0
+    ptype: rate
+    uncertainty: null
+    relative_uncertainty: true
+    fit_guess: 1.0
+    fittable: true
+    fit_limits:
+      - 0
+      - 10000000
+    parameter_interval_bounds:
+      - 0
+      - 10000000
+
+  cathode_sr0_rate_multiplier:
+    nominal_value: 1.0
+    ptype: rate
+    uncertainty: 0.146
+    relative_uncertainty: true
+    fit_guess: 1.0
+    fittable: true
+    fit_limits:
+      - 0
+      - 5
+    parameter_interval_bounds:
+      - 0
+      - 5
+
+  cathode_sr1_rate_multiplier:
+    nominal_value: 1.0
+    ptype: rate
+    uncertainty: 0.104
+    relative_uncertainty: true
+    fit_guess: 1.0
+    fittable: true
+    fit_limits:
+      - 0
+      - 5
+    parameter_interval_bounds:
+      - 0
+      - 5
+
+  cathode_sr2_rate_multiplier:
+    nominal_value: 1.0
+    ptype: rate
+    uncertainty: 0.074
+    relative_uncertainty: true
+    fit_guess: 1.0
+    fittable: true
+    fit_limits:
+      - 0
+      - 5
+    parameter_interval_bounds:
+      - 0
+      - 5
+
+  de_sr0_rate_multiplier:
+    nominal_value: 1.0
+    ptype: rate
+    uncertainty: 0.408
+    relative_uncertainty: true
+    fit_guess: 1.0
+    fittable: true
+    fit_limits:
+      - 0
+      - 10
+    parameter_interval_bounds:
+      - 0
+      - 10
+
+  de_sr1_rate_multiplier:
+    nominal_value: 1.0
+    ptype: rate
+    uncertainty: 0.192
+    relative_uncertainty: true
+    fit_guess: 1.0
+    fittable: true
+    fit_limits:
+      - 0
+      - 10
+    parameter_interval_bounds:
+      - 0
+      - 10
+
+  de_sr2_rate_multiplier:
+    nominal_value: 1.0
+    ptype: rate
+    uncertainty: 0.135
+    relative_uncertainty: true
+    fit_guess: 1.0
+    fittable: true
+    fit_limits:
+      - 0
+      - 10
+    parameter_interval_bounds:
+      - 0
+      - 10
+
+  ae_sr0_rate_multiplier:
+    nominal_value: 1.0
+    ptype: rate
+    uncertainty: 0.171
+    relative_uncertainty: true
+    fit_guess: 1.0
+    fittable: true
+    fit_limits:
+      - 0
+      - 10
+    parameter_interval_bounds:
+      - 0
+      - 10
+
+  ae_sr1_rate_multiplier:
+    nominal_value: 1.0
+    ptype: rate
+    uncertainty: 0.078
+    relative_uncertainty: true
+    fit_guess: 1.0
+    fittable: true
+    fit_limits:
+      - 0
+      - 10
+    parameter_interval_bounds:
+      - 0
+      - 10
+
+  cevns_rate_multiplier:
+    nominal_value: 1.0
+    ptype: rate
+    uncertainty: 0.0381
+    relative_uncertainty: true
+    fit_guess: 1.0
+    fittable: true
+    fit_limits:
+      - 0
+      - 10
+    parameter_interval_bounds:
+      - 0
+      - 10
+
+  signal_efficiency_sr0:
+    nominal_value: 1.0
+    ptype: efficiency
+    uncertainty: 0.112
+    relative_uncertainty: true
+    fittable: true
+    fit_limits:
+      - 0.5
+      - 1.5
+    fit_guess: 1.0
+    parameter_interval_bounds:
+      - 0.5
+      - 1.5
+    description: Parameter to account for the uncertain signal expectation given a certain cross-section
+
+  signal_efficiency_sr1:
+    nominal_value: 1.0
+    ptype: efficiency
+    uncertainty: 0.112
+    relative_uncertainty: true
+    fittable: true
+    fit_limits:
+      - 0.5
+      - 1.5
+    fit_guess: 1.0
+    parameter_interval_bounds:
+      - 0.5
+      - 1.5
+    description: Parameter to account for the uncertain signal expectation given a certain cross-section
+
+  signal_efficiency_sr2:
+    nominal_value: 1.0
+    ptype: efficiency
+    uncertainty: 0.112
+    relative_uncertainty: true
+    fittable: true
+    fit_limits:
+      - 0.5
+      - 1.5
+    fit_guess: 1.0
+    parameter_interval_bounds:
+      - 0.5
+      - 1.5
+    description: Parameter to account for the uncertain signal expectation given a certain cross-section
+
+  t_qy:
+    nominal_value: 0
+    ptype: shape
+    uncertainty: 1
+    relative_uncertainty: false
+    fittable: true
+    blueice_anchors:
+      - -3
+      - -2
+      - -1
+      - 0
+      - 1
+      - 2
+      - 3
+    fit_limits:
+      - -3
+      - 3
+    description: Charge yield morpher
+
+  t_sys_sr0:
+    nominal_value: 0
+    ptype: shape
+    uncertainty: 1
+    relative_uncertainty: false
+    fittable: true
+    blueice_anchors:
+      - -3
+      - -2
+      - -1
+      - 0
+      - 1
+      - 2
+      - 3
+    fit_limits:
+      - -3
+      - 3
+    description: Cathode background systematic uncertainty for SR0
+
+
+  t_sys_sr1:
+    nominal_value: 0
+    ptype: shape
+    uncertainty: 1
+    relative_uncertainty: false
+    fittable: true
+    blueice_anchors:
+      - -3
+      - -2
+      - -1
+      - 0
+      - 1
+      - 2
+      - 3
+    fit_limits:
+      - -3
+      - 3
+    description: Cathode background systematic uncertainty for SR1
+
+  t_sys_sr2:
+    nominal_value: 0
+    ptype: shape
+    uncertainty: 1
+    relative_uncertainty: false
+    fittable: true
+    blueice_anchors:
+      - -3
+      - -2
+      - -1
+      - 0
+      - 1
+      - 2
+      - 3
+    fit_limits:
+      - -3
+      - 3
+    description: Cathode background systematic uncertainty for SR2
+
+
+likelihood_config:
+  # template_folder: "./data/templates"
+  likelihood_terms:
+    - name: SR0
+      default_source_class: alea.template_source.TemplateSource
+      likelihood_type: blueice.likelihood.BinnedLogLikelihood
+      analysis_space:
+        - "cs2_wo_elifecorr": np.linspace(80, 500, 8)
+      in_events_per_bin: true
+      livetime_parameter: livetime_sr0
+      slice_args: { }
+      sources:
+        - name: wimp
+          histname: template
+          parameters:
+            - signal_efficiency_sr0
+            - wimp_rate_multiplier
+            - wimp_mass
+            - t_qy
+          named_parameters:
+            - wimp_mass
+            - t_qy
+          template_filename: template_XENONnT_sr0_wimp_si_{wimp_mass:d}_tqy_{t_qy:d}_1d.h5
+          apply_efficiency: true
+          efficiency_name: signal_efficiency_sr0
+
+        - name: cathode_sr0
+          histname: template
+          parameters:
+            - cathode_sr0_rate_multiplier
+            - t_sys_sr0
+          named_parameters:
+            - t_sys_sr0
+          template_filename: science_roi_background_sr0_template_cathode_tsys_{t_sys_sr0:d}_1d.h5
+
+        - name: de_sr0
+          histname: template
+          parameters:
+            - de_sr0_rate_multiplier
+          template_filename: science_roi_background_sr0_template_de_1d.h5
+
+        - name: ae_sr0
+          histname: template
+          parameters:
+            - ae_sr0_rate_multiplier
+          template_filename: science_roi_background_sr0_template_ae_1d.h5
+
+        - name: cevns
+          histname: template
+          parameters:
+            - cevns_rate_multiplier
+            - signal_efficiency_sr0
+            - t_qy
+          named_parameters:
+            - t_qy
+          template_filename: science_roi_background_sr0_template_cevns_tqy_{t_qy:d}_1d.h5
+          apply_efficiency: true
+          efficiency_name: signal_efficiency_sr0
+
+
+    - name: SR1
+      default_source_class: alea.template_source.TemplateSource
+      likelihood_type: blueice.likelihood.BinnedLogLikelihood
+      analysis_space:
+        - "cs2_wo_elifecorr": np.linspace(80, 500, 8)
+      in_events_per_bin: true
+      livetime_parameter: livetime_sr1
+      slice_args: { }
+      sources:
+        - name: wimp
+          histname: template
+          parameters:
+            - signal_efficiency_sr1
+            - wimp_rate_multiplier
+            - wimp_mass
+            - t_qy
+          named_parameters:
+            - wimp_mass
+            - t_qy
+          template_filename: template_XENONnT_sr1_wimp_si_{wimp_mass:d}_tqy_{t_qy:d}_1d.h5
+          apply_efficiency: true
+          efficiency_name: signal_efficiency_sr1
+
+        - name: cathode_sr1
+          histname: template
+          parameters:
+            - cathode_sr1_rate_multiplier
+            - t_sys_sr1
+          named_parameters:
+            - t_sys_sr1
+          template_filename: science_roi_background_sr1_template_cathode_tsys_{t_sys_sr1:d}_1d.h5
+
+        - name: de_sr1
+          histname: template
+          parameters:
+            - de_sr1_rate_multiplier
+          template_filename: science_roi_background_sr1_template_de_1d.h5
+
+        - name: ae_sr1
+          histname: template
+          parameters:
+            - ae_sr1_rate_multiplier
+          template_filename: science_roi_background_sr1_template_ae_1d.h5
+
+        - name: cevns
+          histname: template
+          parameters:
+            - cevns_rate_multiplier
+            - signal_efficiency_sr1
+            - t_qy
+          named_parameters:
+            - t_qy
+          template_filename: science_roi_background_sr1_template_cevns_tqy_{t_qy:d}_1d.h5
+          apply_efficiency: true
+          efficiency_name: signal_efficiency_sr1
+
+
+    - name: SR2
+      default_source_class: alea.template_source.TemplateSource
+      likelihood_type: blueice.likelihood.BinnedLogLikelihood
+      analysis_space:
+        - "cs2_wo_elifecorr": np.linspace(80, 500, 8)
+      in_events_per_bin: true
+      livetime_parameter: livetime_sr2
+      slice_args: { }
+      sources:
+        - name: wimp
+          histname: template
+          parameters:
+            - signal_efficiency_sr2
+            - wimp_rate_multiplier
+            - wimp_mass
+            - t_qy
+          named_parameters:
+            - wimp_mass
+            - t_qy
+          template_filename: template_XENONnT_sr2_wimp_si_{wimp_mass:d}_tqy_{t_qy:d}_1d.h5
+          apply_efficiency: true
+          efficiency_name: signal_efficiency_sr2
+
+        - name: cathode_sr2
+          histname: template
+          parameters:
+            - cathode_sr2_rate_multiplier
+            - t_sys_sr2
+          named_parameters:
+            - t_sys_sr2
+          template_filename: science_roi_background_sr2_template_cathode_tsys_{t_sys_sr2:d}_1d.h5
+
+        - name: de_sr2
+          histname: template
+          parameters:
+            - de_sr2_rate_multiplier
+          template_filename: science_roi_background_sr2_template_de_1d.h5
+
+        - name: cevns
+          histname: template
+          parameters:
+            - cevns_rate_multiplier
+            - signal_efficiency_sr2
+            - t_qy
+          named_parameters:
+            - t_qy
+          template_filename: science_roi_background_sr2_template_cevns_tqy_{t_qy:d}_1d.h5
+          apply_efficiency: true
+          efficiency_name: signal_efficiency_sr2

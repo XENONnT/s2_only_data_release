@@ -1,0 +1,13 @@
+[tool.poetry]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.7"
+inference_interface = "v0.0.2"
+alea-inference = "v0.2.4"
+multihist = "v0.6.5"
+wimprates = "v0.5.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.8"]
+build-backend = "poetry.core.masonry.api"
