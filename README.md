@@ -4,7 +4,7 @@ XENONnT S2-only data release
 XENON Collaboration, 2026
 
 The repository contains data from the paper
-  * Aprile E., _et al._ (XENON collboration), [Light Dark Matter Search with 7.8 Tonne-Year of Ionization-Only Data in XENONnT](https://arxiv.org/abs/2601.11296) (2026)
+  * Aprile E., _et al._ (XENON collaboration), [Light Dark Matter Search with 7.8 Tonne-Year of Ionization-Only Data in XENONnT](https://arxiv.org/abs/2601.11296) (2026)
 
 The data release allows researchers to compute dark matter search result for a custom model using XENONnT ionization-only data. Please cite our paper if you do so. For further questions and comments, please contact [Shenyang Shi](ss6109@columbia.edu) and [Yongyu Pan](yongyu.pan@lpnhe.in2p3.fr).
 
